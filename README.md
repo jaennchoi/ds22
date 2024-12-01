@@ -12,136 +12,100 @@ cygwin 환경에서 'make' 명령어로 컴파일하고 './project2.exe' 명령�
 
 ### 실행 방법 예시
 실행 방법의 예시는 아래와 같습니다.
-##### Linked List Operations
-1. Create a Tree
-번호 1을 입력하면 트리를 생성합니다.
-이 작업은 새로운 이진 탐색 트리를 초기화합니다.
 
-3. Change BST to Array
-번호 2를 입력하면 현재 이진 탐색 트리를 배열로 변환합니다.
-변환된 배열이 화면에 출력됩니다.
+1. Create a Tree: 실행화면에서 표시되어있는 번호의 기능 중 1을 입력하면 tree를 만듭니다. tree는 비어 있고, 이후 insertion 작업을 통해 노드 추가가 가능해집니다.
 
-3. Build a Heap
-번호 3을 입력하면 주어진 배열을 기반으로 힙을 생성합니다.
-최소 힙 구조를 출력합니다.
+2. Change BST to Array : 실행화면에서 표시되어있는 번호의 기능 중 2를 입력하면 현재 BST를 배열로 변환합니다. 변환된 배열은 크기, 데이터를 포함하여 출력됩니다.
 
-4. Delete the Heap
-번호 4를 입력하면 현재 힙을 삭제합니다.
-메모리가 해제되며 힙 데이터는 더 이상 사용할 수 없습니다.
+3. Build a Heap: 실행화면에서 표시되어있는 번호의 기능 중 3을 입력하면 주어진 배열을 기반으로 최소 heap을 생성합니다. 이렇게 만들어진 heap은 계층적 구조로 출력됩니다.
 
-5. Find the Depth of Heap
-번호 5를 입력하면 힙의 깊이를 계산하여 출력합니다.
+4. Delete the Heap: 실행화면에서 표시되어있는 번호의 기능 중 4를 입력하면 현재 heap을 delete합니다. 이후 힙은 삭제되어 더 이상 사용할 수 없게 되며 'Heap deleted successfully.'라고 출력됩니다.
 
-6. Insert value to the Heap
-번호 6을 입력하고 추가할 값을 입력하면 힙에 새로운 값을 삽입합니다.
-힙의 최소 힙 속성이 유지됩니다.
+5. Find the Depth of Heap: 실행화면에서 표시되어있는 번호의 기능 중 5를 입력하면 힙의 depth를 계산하여 'Depth of Heap is 4.'와 같은 형식으로 출력됩니다.
 
-7. Dequeue the Heap
-번호 7을 입력하면 힙의 루트 값을 제거하고 출력합니다.
-힙 구조를 유지하며 데이터가 재조정됩니다.
+6. Insert value to the Heap: 실행화면에서 표시되어있는 번호의 기능 중 6을 입력하고 추가할 값을 입력하면 힙에 새로운 값을 insert합니다.
 
-8. Print the Heap
-번호 8을 입력하면 현재 힙의 모든 데이터를 출력합니다.
+7. Dequeue the Heap: 실행화면에서 표시되어있는 번호의 기능 중 7을 입력하면 heap의 루트 값을 제거하고 출력합니다.
 
-##### Sort Operations
-9. Heap Sort
-번호 9를 입력하면 힙 정렬을 실행합니다.
-주어진 배열을 최소 힙 속성을 사용하여 오름차순으로 정렬합니다.
+8. Print the Heap: 실행화면에서 표시되어있는 번호의 기능 중 8을 입력하면 현재 heap의 모든 데이터를 계층적 구조로로 출력합니다.
 
-10. Bubble Sort
-번호 10을 입력하면 버블 정렬을 실행합니다.
-주어진 배열을 반복적으로 비교하여 오름차순으로 정렬합니다.
+9. Heap Sort: 실행화면에서 표시되어있는 번호의 기능 중 9를 입력하면 Heap Sort를 실행합니다. 주어진 array를 오름차순 정렬합니다.
 
-11. Insertion Sort
-번호 11을 입력하면 삽입 정렬을 실행합니다.
-각 요소를 적절한 위치에 삽입하여 배열을 정렬합니다.
+10. Bubble Sort: 실행화면에서 표시되어있는 번호의 기능 중 10을 입력하면 Bubble Sort를 실행합니다. 주어진 array를 반복적으로 비교하여 오름차순 정렬합니다.
 
-12.Selection Sort
-번호 12를 입력하면 선택 정렬을 실행합니다.
-배열의 각 요소에서 최소값을 선택하여 정렬합니다.
+11. Insertion Sort: 실행화면에서 표시되어있는 번호의 기능 중 11을 입력하면 Insertion Sort을 실행합니다. 각 요소를 정렬된 위치로 삽입하며 array를 정렬합니다.
 
-13. Quick Sort
-번호 13을 입력하면 퀵 정렬을 실행합니다.
-피벗을 기준으로 배열을 나누어 정렬합니다.
+12.Selection Sort: 실행화면에서 표시되어있는 번호의 기능 중 12를 입력하면 Selection Sort를 실행합니다. array의 최소값을 반복적으로 선택하여 앞쪽에 배치합니다.
 
-14. 프로그램 종료
-번호 0을 입력하면 프로그램이 종료됩니다.
+13. Quick Sort: 실행화면에서 표시되어있는 번호의 기능 중 13을 입력하면 Quick Sort를 실행합니다. 피벗을 기준으로 array를 나누어 정렬합니다.
+
+14. Exit the program: 실행화면에서 표시되어있는 번호의 기능 중 0을 입력할 시 프로그램이 종료됩니다.
 
 
-### 수정한 부분 및 함수 설명
-### Tree 관련 함수
+### 수정한 부분 및 함수 설명 (heap.c 파일)
+
 ##### create_tree()
-이 함수는 비어 있는 새 이진 탐색 트리(BST)를 생성하고 반환합니다.
-트리는 루트가 NULL로 초기화되며 크기(size)는 0으로 설정됩니다.
+이 함수는 비어 있는 새 binary tree를 만들어 return합니다. 새 binary tree는 루트가 NULL로 초기화되며 size는 0입니다.
 
 ##### create_node(int value)
-이 함수는 주어진 값을 가지는 새 노드를 생성합니다.
-생성된 노드는 부모, 왼쪽 자식, 오른쪽 자식 포인터가 모두 NULL로 초기화됩니다.
+이 함수는 value 값을 가지는 새 node를 만듭니다. 만들어진 node는 parent, left, right node 포인터가 모두 NULL로 초기화됩니다.
 
 ##### insert_node(struct tree* t, int value)
-이 함수는 주어진 값을 BST의 적절한 위치에 삽입합니다.
-삽입 규칙에 따라, 값이 작으면 왼쪽, 크면 오른쪽으로 이동하여 삽입됩니다.
+이 함수는 value 값을 BST의 맞는 위치에 insert합니다. tree를 탐색해 값에 따라 작으면 왼쪽, 크면 오른쪽으로 이동하여 insert됩니다.
 
 ##### bstToArray(struct tree* t)
-이 함수는 BST를 배열로 변환합니다.
-루트를 시작으로 배열에 노드 값을 저장하며, 배열의 첫 번째 요소는 배열 크기를 나타냅니다.
+이 함수는 BST를 array로 변환합니다. 루트를 시작으로 array에 node 값을 저장하며, 이 때 array의 첫 번째 요소는 array 크기를 나타냅니다. 빈 node는 0으로 설정되어 있습니다.
 
 ##### bstToArrayRec(int* array, struct node* n, int index, int* maxI)
-이 함수는 재귀적으로 BST를 배열로 변환하는 데 사용됩니다.
-현재 노드 값을 저장하고 왼쪽 자식은 2 * index + 1, 오른쪽 자식은 2 * index + 2 위치에 저장합니다.
+이 함수는 recursive하게 BST를 array로 변환할 때 사용합니다. 현재 node 값을 저장하고 왼쪽 자식 node는 2 * index + 1, 오른쪽 자식 node는 2 * index + 2 위치에 저장합니다.
 
-### Heap 관련 함수
 ##### createHeap()
-이 함수는 새로운 힙 데이터를 생성하고 반환합니다.
-힙은 크기(size)가 0으로 초기화되며, 동적으로 할당된 배열을 포함합니다.
+이 함수는 새 binary heap을 만들어 반환합니다. heap의 size는 0으로 초기화됩니다.
+
+##### printHeap(HEAP h)
+이 함수는 heap.h의 내용을 출력하며, heap의 depth, size, 계층 구조를 모두 출력합니다. 
+
+##### swap(int*n1, int*n2)
+이 함수는 pointer를 이용하여 두 node를 swap합니다. 
 
 ##### buildHeap(HEAP* h, int* array, int arraySize)
-주어진 배열을 기반으로 최소 힙을 생성합니다.
-배열의 절반부터 루트 방향으로 이동하며, 각 노드에 대해 heapify를 호출해 최소 힙 조건을 유지합니다.
+이 함수는 주어진 array를 기반으로 min heap을 만듭니다. 만약 heap이 존재하지 않으면 에러 메시지를 출력하게 합니다. array의 절반 node부터 루트 방향으로 이동하면 각 node에 대해 heapify 함수를 호출해 min heap 조건을 유지할 수 있게 합니다. heapify 함수는 따로 만들어 사용하였으며 하단에 설명을 추가하였습니다.
 
+##### delteHeap(HEAP h)
+이 함수는 heap을 삭제하는 역할을 합니다. heap이 삭제되면 모든 메모리가 컴퓨터에 반환되어 다른 프로세스에서 사용할 수 있게 됩니다. heap이 성공적으로 삭제되었을 시 "Successfully deleted."가 출력되고, 그렇지 않으면 "Error : No heap exists."가 출력됩니다.
+
+##### findDepth(HEAP h)
+이 함수는 heap의 루트로부터 depth를 계산하여 반환합니다. heap의 size를 2로 반복적으로 나누어 depth를 결정합니다. 이 반환 값을 통해 main 함수는 Depth를 "Depth is: (the depth of tree)."를 출력하고, heap이 만들어지지 않았으면 "Error: No heap exists."를 출력합니다.
+
+##### insertNode(HEAP h, int value)
+이 함수는 heap에 새로운 노드를 추가합니다. 삽입할 값은 매개변수 value로 제공됩니다. 새로운 노드는 heap의 가장 아래 오른쪽 위치에 추가된 후, 부모 노드와 비교하여 heap의 min heap 조건을 유지합니다. heap이 존재하지 않을 경우, "Heap does not exist."를 출력하고, 삽입 값이 1 이하일 경우 "Invalid value."를 출력합니다.
+
+##### dequeueHeap(HEAP h)
+이 함수는 heap의 루트 노드를 제거(dequeue)한 후 반환합니다. 제거 후에도 heap의 min heap을 유지하기 위해 heapify 과정을 수행합니다. heap이 생성되지 않았거나 비어 있는 경우, "Heap does not exist or is empty."를 출력하고 -1을 반환합니다. heap의 루트 값을 제거하고, 마지막 노드를 루트로 이동한 뒤 heapify 함수를 통해 재정렬하여 min heap을 유지합니다.
+
+##### heapSort(HEAP h, int* heapsort, int count)
+이 함수는 heap sort 알고리즘을 사용하여 array를 정렬합니다. buildHeap 함수를 호출하여 입력 array를 기반으로 min heap을 생성한 후, dequeueHeap을 반복 호출하여 heap의 루트 값을 제거하면서 array에 정렬된 값을 저장합니다. heap 데이터는 정렬 과정에서 비워지며, 최종적으로 array에는 입력값이 오름차순 정렬됩니다.
+
+##### bubbleSort(int* Array)
+이 함수는 bubbleSort 알고리즘을 구현하여 array를 오름차순 정렬합니다. array 내 인접 요소를 반복 비교하고 교환하여 가장 큰 값을 뒤로 이동시키는 방식으로 동작합니다. swap 함수를 사용하여 요소를 교환하며, array의 크기는 20으로 고정되어 있습니다. 이 함수는 main.c에서 결정된 array를 입력받아 정렬합니다.
+
+##### insertionSort(int* Array)
+이 함수는 insertionSort 알고리즘을 구현하여 array를 오름차순 정렬합니다. array의 각 요소를 정렬된 부분에 맞는 위치로 삽입하는 방식으로 동작합니다. 현재 요소를 key에 저장하고, 이전 요소들과 비교하며 더 큰 값은 오른쪽으로 이동시킨 뒤, key 값을 맞는 위치에 삽입합니다. array의 크기는 20으로 고정되어 있으며, 이 함수는 main.c에서 결정된 array를 입력받아 정렬합니다. 
+
+##### selectionSort(int* Array)
+이 함수는 selectionSort 알고리즘을 구현하여 array를 오름차순 정렬합니다. 현재 정렬되지 않은 부분에서 최소값을 찾아 현재 위치와 교환하는 방식으로 동작합니다. 각 반복에서 현재 위치를 기준으로 최소값의 인덱스를 찾고, 이를 현재 위치와 교환하여 정렬을 진행합니다. 배열의 크기는 20으로 고정되어 있으며, main.c에서 array가 입력됩니다. 
+
+##### quickSort(int* Array, int low, int high)
+이 함수는 quickSort 알고리즘을 구현하여 array를 오름차순 정렬합니다. 정렬할 array와 시작 인덱스(low), 마지막 인덱스(high)를 매개변수로 받습니다. partition 함수는 피벗 값을 기준으로 배열을 분할하며, 피벗보다 작은 값들은 왼쪽, 큰 값들은 오른쪽에 배치됩니다. 이 과정을 재귀적으로 반복하여 array를 정렬합니다. array의 크기는 20으로 고정되어 있으며, main.c에서 입력됩니다. 
+
+##### printArray(int* Array)
+이 함수는 입력된 array를를 출력합니다. 크기가 20으로 고정된 배열을 순회하며, 각 요소를 공백으로 구분하여 출력합니다.
+
+### 기타 수정 및 추가한 부분
 ##### heapify(HEAP h, int index)
 이 함수는 특정 노드부터 시작해 자식 노드 간 값을 비교하며 힙 구조를 재조정합니다.
 최소 힙 규칙(부모 값이 자식 값보다 작음)을 유지합니다.
 
-##### deleteHeap(HEAP* h)
-이 함수는 힙의 메모리를 해제하고 힙 포인터를 NULL로 설정합니다.
-존재하지 않는 힙에 대해 호출하면 오류 메시지가 출력됩니다.
-
-##### insertNode(HEAP h, int value)
-힙의 크기를 증가시키고 새 값을 추가합니다.
-부모 노드와 비교하며 값이 더 작은 경우 자리를 교환해 최소 힙 규칙을 유지합니다.
-
-##### dequeueHeap(HEAP h)
-루트(최소값)를 제거하고 마지막 요소를 루트로 이동시킨 뒤, 힙을 재정렬합니다.
-루트 값을 반환합니다.
-
-##### findDepth(HEAP h)
-힙의 깊이를 계산합니다. 힙의 크기를 2로 반복적으로 나누어 깊이를 결정합니다.
-
-##### printHeap(HEAP h)
-힙의 계층 구조를 출력합니다.
-각 레벨을 적절히 정렬하여 가독성을 높였습니다.
-
-### Sort 관련 함수
-##### heapSort(HEAP h, int* heapsort, int count)
-배열을 힙으로 빌드한 후, 가장 작은 값을 반복적으로 제거하며 정렬합니다.
-
-##### bubbleSort(int* Array)
-배열 요소를 인접 값과 비교하며 교환하여 정렬합니다.
-안정적인 정렬 알고리즘으로, 간단한 구현이 특징입니다.
-
-##### insertionSort(int* Array)
-배열의 각 요소를 정렬된 위치로 삽입하며 정렬합니다.
-작은 배열에 적합한 알고리즘입니다.
-
-##### selectionSort(int* Array)
-배열에서 최소값을 반복적으로 찾아 앞쪽에 배치하여 정렬합니다.
-
-##### quickSort(int* Array, int low, int high)
-피벗을 기준으로 배열을 나누고, 재귀적으로 정렬합니다.
-평균적으로 매우 빠른 정렬 알고리즘입니다.
-
-### 수정한 부분
 이중 포인터(HEAP*) 사용:
 buildHeap과 deleteHeap 함수에서 이중 포인터를 사용해 메모리 동기화 및 관리가 안전하도록 수정했습니다.
 
