@@ -2,7 +2,7 @@
 자료구조, project 2
 
 # 과제 목적
-이 프로젝트에서는 프로젝트 파일에 제공된 함수를 채우기 위해 지식을 힙과 정렬에 사용하도록 지정됩니다. 
+project 2에서는 
 
 # cygwin에서의 동작
 ### 컴파일 방법
@@ -13,17 +13,17 @@ cygwin 환경에서 'make' 명령어로 컴파일하고 './project2.exe' 명령�
 ### 실행 방법 예시
 실행 방법의 예시는 아래와 같습니다.
 
-1. Create a Tree: 실행화면에서 표시되어있는 번호의 기능 중 1을 입력하면 tree를 만듭니다. tree는 비어 있고, 이후 insertion 작업을 통해 노드 추가가 가능해집니다.
+1. Create a Tree: 실행화면에서 표시되어있는 번호의 기능 중 1을 입력하면 tree를 만듭니다. tree는 비어 있고, 이후 insertion을 통해 노드 추가가 가능해집니다.
 
-2. Change BST to Array : 실행화면에서 표시되어있는 번호의 기능 중 2를 입력하면 현재 BST를 배열로 변환합니다. 변환된 배열은 크기, 데이터를 포함하여 출력됩니다.
+2. Change BST to Array : 실행화면에서 표시되어있는 번호의 기능 중 2를 입력하면 현재 BST를 배열로 변환합니다. 변환된 array는 크기, 데이터를 포함하여 출력됩니다.
 
-3. Build a Heap: 실행화면에서 표시되어있는 번호의 기능 중 3을 입력하면 주어진 배열을 기반으로 최소 heap을 생성합니다. 이렇게 만들어진 heap은 계층적 구조로 출력됩니다.
+3. Build a Heap: 실행화면에서 표시되어있는 번호의 기능 중 3을 입력하면 주어진 array를 기반으로 min-heap을 생성합니다. 이런 식으로 만들어진 heap은 계층적 구조로 출력됩니다.
 
-4. Delete the Heap: 실행화면에서 표시되어있는 번호의 기능 중 4를 입력하면 현재 heap을 delete합니다. 이후 힙은 삭제되어 더 이상 사용할 수 없게 되며 'Heap deleted successfully.'라고 출력됩니다.
+4. Delete the Heap: 실행화면에서 표시되어있는 번호의 기능 중 4를 입력하면 현재 heap을 delete합니다. 이후 heap은 삭제되어 더 이상 사용할 수 없게 되며 'Heap deleted successfully.'라고 출력됩니다.
 
-5. Find the Depth of Heap: 실행화면에서 표시되어있는 번호의 기능 중 5를 입력하면 힙의 depth를 계산하여 'Depth of Heap is 4.'와 같은 형식으로 출력됩니다.
+5. Find the Depth of Heap: 실행화면에서 표시되어있는 번호의 기능 중 5를 입력하면 힙의 depth를 계산하여 'Depth of Heap is 4.'와 같은 형식으로 depth를 출력해냅니다.
 
-6. Insert value to the Heap: 실행화면에서 표시되어있는 번호의 기능 중 6을 입력하고 추가할 값을 입력하면 힙에 새로운 값을 insert합니다.
+6. Insert value to the Heap: 실행화면에서 표시되어있는 번호의 기능 중 6을 입력하고 추가할 값을 입력하면 heap에 새로운 값을 insert합니다.
 
 7. Dequeue the Heap: 실행화면에서 표시되어있는 번호의 기능 중 7을 입력하면 heap의 루트 값을 제거하고 출력합니다.
 
@@ -35,7 +35,7 @@ cygwin 환경에서 'make' 명령어로 컴파일하고 './project2.exe' 명령�
 
 11. Insertion Sort: 실행화면에서 표시되어있는 번호의 기능 중 11을 입력하면 Insertion Sort을 실행합니다. 각 요소를 정렬된 위치로 삽입하며 array를 정렬합니다.
 
-12.Selection Sort: 실행화면에서 표시되어있는 번호의 기능 중 12를 입력하면 Selection Sort를 실행합니다. array의 최소값을 반복적으로 선택하여 앞쪽에 배치합니다.
+12. Selection Sort: 실행화면에서 표시되어있는 번호의 기능 중 12를 입력하면 Selection Sort를 실행합니다. array의 최소값을 반복적으로 선택하여 앞쪽에 배치합니다.
 
 13. Quick Sort: 실행화면에서 표시되어있는 번호의 기능 중 13을 입력하면 Quick Sort를 실행합니다. 피벗을 기준으로 array를 나누어 정렬합니다.
 
@@ -69,9 +69,9 @@ cygwin 환경에서 'make' 명령어로 컴파일하고 './project2.exe' 명령�
 이 함수는 pointer를 이용하여 두 node를 swap합니다. 
 
 ##### buildHeap(HEAP* h, int* array, int arraySize)
-이 함수는 주어진 array를 기반으로 min heap을 만듭니다. 만약 heap이 존재하지 않으면 에러 메시지를 출력하게 합니다. array의 절반 node부터 루트 방향으로 이동하면 각 node에 대해 heapify 함수를 호출해 min heap 조건을 유지할 수 있게 합니다. heapify 함수는 따로 만들어 사용하였으며 하단에 설명을 추가하였습니다.
+이 함수는 주어진 array를 기반으로 min heap을 만듭니다. 만약 heap이 존재하지 않으면 에러 메시지를 출력하게 합니다. array의 절반 node부터 루트 방향으로 이동하면 각 node에 대해 min heap 조건을 유지할 수 있게 합니다. 
 
-##### delteHeap(HEAP h)
+##### deleteHeap(HEAP h)
 이 함수는 heap을 삭제하는 역할을 합니다. heap이 삭제되면 모든 메모리가 컴퓨터에 반환되어 다른 프로세스에서 사용할 수 있게 됩니다. heap이 성공적으로 삭제되었을 시 "Successfully deleted."가 출력되고, 그렇지 않으면 "Error : No heap exists."가 출력됩니다.
 
 ##### findDepth(HEAP h)
@@ -81,7 +81,7 @@ cygwin 환경에서 'make' 명령어로 컴파일하고 './project2.exe' 명령�
 이 함수는 heap에 새로운 노드를 추가합니다. 삽입할 값은 매개변수 value로 제공됩니다. 새로운 노드는 heap의 가장 아래 오른쪽 위치에 추가된 후, 부모 노드와 비교하여 heap의 min heap 조건을 유지합니다. heap이 존재하지 않을 경우, "Heap does not exist."를 출력하고, 삽입 값이 1 이하일 경우 "Invalid value."를 출력합니다.
 
 ##### dequeueHeap(HEAP h)
-이 함수는 heap의 루트 노드를 제거(dequeue)한 후 반환합니다. 제거 후에도 heap의 min heap을 유지하기 위해 heapify 과정을 수행합니다. heap이 생성되지 않았거나 비어 있는 경우, "Heap does not exist or is empty."를 출력하고 -1을 반환합니다. heap의 루트 값을 제거하고, 마지막 노드를 루트로 이동한 뒤 heapify 함수를 통해 재정렬하여 min heap을 유지합니다.
+이 함수는 heap의 루트 노드를 제거(dequeue)한 후 반환합니다. 제거 후에도 heap의 min heap을 유지하기 위한 과정을 수행합니다. heap이 생성되지 않았거나 비어 있는 경우, "Heap does not exist or is empty."를 출력하고 -1을 반환합니다. heap의 루트 값을 제거하고, 마지막 노드를 루트로 이동한 뒤 재정렬하여 min heap을 유지합니다.
 
 ##### heapSort(HEAP h, int* heapsort, int count)
 이 함수는 heap sort를 통해 array를 정렬합니다. buildHeap 함수를 호출하여 입력 array를 기반으로 min heap을 생성한 후, dequeueHeap을 반복 호출하여 heap의 루트 값을 제거하면서 array에 정렬된 값을 저장합니다. heap 데이터는 정렬 과정에서 비워지며, 최종적으로 array에는 입력값이 오름차순 정렬됩니다.
@@ -96,30 +96,10 @@ cygwin 환경에서 'make' 명령어로 컴파일하고 './project2.exe' 명령�
 이 함수는 selectionSort를 통해 array를 오름차순 정렬합니다. 각 반복에서 현재 위치를 기준으로 min 값의 인덱스를 찾고, 이를 현재 위치와 교환하여 정렬을 진행합니다. 배열의 크기는 20으로 고정되어 있으며, main.c에서 array가 입력됩니다. 
 
 ##### quickSort(int* Array, int low, int high)
-이 함수는 quickSort 알고리즘을 구현하여 array를 오름차순 정렬합니다. 정렬할 array와 시작 인덱스(low), 마지막 인덱스(high)를 매개변수로 받습니다. partition 함수는 피벗을 기준으로 array를 분할하며, 피벗보다 작은 값들은 왼쪽, 큰 값들은 오른쪽에 배치됩니다. 이 과정을 재귀적 반복하여 array를 정렬합니다. array의 크기는 20으로 고정돼 있으며, main.c에서 입력됩니다. 
+이 함수는 quickSort 알고리즘을 구현하여 array를 오름차순 정렬합니다. 정렬할 array와 시작 인덱스(low), 마지막 인덱스(high)를 매개변수로 받습니다. partition 함수는 피벗을 기준으로 array를 분할하며, 피벗보다 작은 값들은 왼쪽, 큰 값들은 오른쪽에 배치됩니다. 이 과정을 재귀적 반복해서 array를 정렬합니다. array의 크기는 20으로 고정돼 있으며, main.c에서 입력됩니다. 
 
 ##### printArray(int* Array)
-이 함수는 입력된 array를를 출력합니다. 크기가 20으로 고정된 array를 순회하며, 각 요소를 공백으로 구분하여 출력합니다.
-
-### 기타 수정 및 추가한 부분
-##### heapify(HEAP h, int index)
-이 함수는 특정 노드부터 시작해 자식 노드 간 값을 비교하며 힙 구조를 재조정합니다.
-최소 힙 규칙(부모 값이 자식 값보다 작음)을 유지합니다.
-
-이중 포인터(HEAP*) 사용:
-buildHeap과 deleteHeap 함수에서 이중 포인터를 사용해 메모리 동기화 및 관리가 안전하도록 수정했습니다.
-
-최소 힙 조건 유지:
-heapify 함수와 insertNode 함수에서 최소 힙 조건(부모 노드가 자식 노드보다 작음)을 유지하도록 구현을 추가했습니다.
-
-BST를 배열로 변환:
-bstToArray 함수에서 크기를 포함한 배열 구조를 추가하여 사용성을 개선했습니다.
-
-정렬 알고리즘 구현:
-원본 코드에서 구현이 없던 정렬 알고리즘(bubbleSort, insertionSort, selectionSort, quickSort, heapSort)을 추가했습니다.
-
-출력 형식 개선:
-printHeap 함수에서 힙의 계층적 구조를 가독성 있게 출력하도록 수정했습니다.
+이 함수는 입력된 array를를 출력합니다. array를 순회하며, 각 요소를 공백으로 구분하여 출력할 수 있게 합니다.
 
 
 
