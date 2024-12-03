@@ -51,10 +51,10 @@ cygwin 환경에서 'make' 명령어로 컴파일하고 './project2.exe' 명령�
 이 함수는 value 값을 가지는 새 node를 만듭니다. 만들어진 node는 parent, left, right node 포인터가 모두 NULL로 초기화됩니다.
 
 ##### insert_node(struct tree* t, int value)
-이 함수는 value 값을 BST의 맞는 위치에 insert합니다. tree를 탐색해 값에 따라 작으면 왼쪽, 크면 오른쪽으로 이동하여 insert됩니다.
+이 함수는 value 값을 BST의 맞는 위치에 insert합니다. tree를 탐색해 값에 따라서 작으면 왼쪽, 크면 오른쪽으로 이동하여 insert됩니다.
 
 ##### bstToArray(struct tree* t)
-이 함수는 BST를 array로 변환합니다. 루트를 시작으로 array에 node 값을 저장하며, 이 때 array의 첫 번째 요소는 array 크기를 나타냅니다. 빈 node는 0으로 설정되어 있습니다.
+이 함수는 BST를 array로 변환합니다. 루트를 시작으로 array에 node 값을 저장하며, 이 때 array의 첫 번째 요소는 array 크기를 나타냅니다. 비어있는 node는 0으로 설정되어 있습니다.
 
 ##### bstToArrayRec(int* array, struct node* n, int index, int* maxI)
 이 함수는 recursive하게 BST를 array로 변환할 때 사용합니다. 현재 node 값을 저장하고 왼쪽 자식 node는 2 * index + 1, 오른쪽 자식 node는 2 * index + 2 위치에 저장합니다.
