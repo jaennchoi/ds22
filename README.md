@@ -68,7 +68,7 @@ cygwin 환경에서 'make' 명령어로 컴파일하고 './project2.exe' 명령�
 ##### swap(int*n1, int*n2)
 이 함수는 pointer를 이용하여 두 node를 swap합니다. 
 
-##### buildHeap(HEAP* h, int* array, int arraySize)
+##### buildHeap(HEAP h, int* array, int arraySize)
 이 함수는 주어진 array를 기반으로 min heap을 만듭니다. 만약 heap이 존재하지 않으면 에러 메시지를 출력하게 합니다. array의 절반 node부터 루트 방향으로 이동하면 각 node에 대해 min heap 조건을 유지할 수 있게 합니다. 
 
 ##### deleteHeap(HEAP h)
