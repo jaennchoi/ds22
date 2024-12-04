@@ -2,7 +2,7 @@
 자료구조, project 2
 
 # 과제 목적
-project 2에서는 
+project 2에서는 힙(Heap) 자료구조를 생성하고, 배열 데이터를 기반으로 최소 Min-Heap을 구축해봅니다. 그리고 Heap Sort, Bubble Sort, Insertion Sort, Selection Sort, Quick Sort 등 다양한 정렬 알고리즘을 직접 구현해봅니다.
 
 # cygwin에서의 동작
 ### 컴파일 방법
@@ -81,7 +81,7 @@ cygwin 환경에서 'make' 명령어로 컴파일하고 './project2.exe' 명령�
 이 함수는 heap에 새로운 노드를 추가합니다. 삽입할 값은 매개변수 value로 제공됩니다. 새로운 노드는 heap의 가장 아래 오른쪽 위치에 추가된 후, 부모 노드와 비교하여서 heap의 min heap 조건을 유지합니다. heap이 존재하지 않을 경우에는 "Heap does not exist."를 출력하고, 삽입 값이 1 이하일 경우 "Invalid value."를 출력합니다.
 
 ##### dequeueHeap(HEAP h)
-이 함수는 heap의 루트 노드를 제거(dequeue)한 후 반환합니다. 제거 후에도 heap의 min heap을 유지하기 위한 과정을 수행합니다. heap이 생성되지 않았거나 비어 있는 경우, "Heap does not exist or is empty."를 출력하고 -1을 반환합니다. heap의 루트 값을 제거하고, 마지막 노드를 루트로 이동한 뒤 재정렬하여 min heap을 유지합니다.
+이 함수는 heap의 루트 노드를 제거(dequeue)한 후 반환합니다. 제거 후에도 heap의 min heap을 유지하기 위한 과정을 수행합니다. heap이 생성되지 않았거나 비어 있는 경우, "Error : No heap exists."를 출력하고 -1을 반환합니다. heap의 루트 값을 제거하고, 마지막 노드를 루트로 이동한 뒤 재정렬하여 min heap을 유지합니다.
 
 ##### heapSort(HEAP h, int* heapsort, int count)
 이 함수는 heap sort를 통해 array를 정렬합니다. buildHeap 함수를 호출하여 입력 array를 기반으로 min heap을 생성한 후, dequeueHeap을 반복 호출하여 heap의 루트 값을 제거하면서 array에 정렬된 값을 저장합니다. heap 데이터는 정렬 과정에서 비워지며, 최종적으로 array에는 입력값이 오름차순 정렬됩니다.
